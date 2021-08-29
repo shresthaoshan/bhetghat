@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 	purge: [
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
@@ -6,10 +6,14 @@ export default {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		fontFamily: {
-			sans: ["Graphik", "sans-serif"],
+			sans: ["Roboto", "sans-serif"],
 			serif: ["Merriweather", "serif"],
 		},
-		extend: {},
+		extend: {
+			gridTemplateColumns: {
+				check: "900px 120px",
+			},
+		},
 	},
 	variants: {
 		extend: {},

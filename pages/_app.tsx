@@ -3,6 +3,7 @@ import * as React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 
+import "styles/globals.css";
 import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
@@ -16,10 +17,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header>
-				<Header />
-			</header>
-			<main className="md:container md:mx-auto mt-10 px-4">
+			<main className="md:container md:mx-auto px-3 md:px-0 py-5 h-screen">
 				<Component {...pageProps} />
 			</main>
 		</>

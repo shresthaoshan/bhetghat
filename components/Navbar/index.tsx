@@ -19,6 +19,7 @@ const _navItems = [
 	{
 		label: "Contact",
 		path: "/contact",
+		extra: true,
 	},
 ];
 
@@ -28,7 +29,13 @@ function Navbar() {
 			{_navItems.map((item) => (
 				<li key={item.path} className={css.navlist_item}>
 					<Link passHref href={item.path}>
-						<a className={css.nav_link}>{item.label}</a>
+						<a
+							className={
+								item.extra ? css.nav_link_extra : css.nav_link
+							}
+						>
+							{item.label}
+						</a>
 					</Link>
 				</li>
 			))}

@@ -14,7 +14,7 @@ function Header() {
 				<img
 					className={css.brand_logo}
 					src={logo_link}
-					alt="tailwind logo"
+					alt="company logo"
 				/>
 			</div>
 
